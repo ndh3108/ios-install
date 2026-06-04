@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cài đặt ứng dụng</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        margin-top: 100px;
+      }
+      button {
+        padding: 15px 30px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cài đặt ứng dụng</h1>
+
+    <button onclick="installApp()">Cài đặt</button>
+
+    <script>
+      function installApp() {
+        window.location.href =
+          "itms-services://?action=download-manifest&url=https://YOUR_USERNAME.github.io/ios-install/manifest.plist";
+      }
+    </script>
+  </body>
+</html>
